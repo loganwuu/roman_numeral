@@ -19,7 +19,14 @@ var romanNumeral = function(number) {
 };
 
 
-// $(document).ready(function(){
-//   $("form#countUp").submit(function(event) {
-//
-// });
+$(document).ready(function(){
+  $("form#romanNumeral").submit(function(event) {
+        var number = parseInt($("input#number").val());
+        var result = romanNumeral(number);
+
+        $(".romanNumerals").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+});
