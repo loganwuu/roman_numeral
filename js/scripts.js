@@ -1,5 +1,4 @@
 var romanNumeral = function(number) {
-
     if (number > 3999) {
         return "Please enter a number less than or equal to 3,999.";
     } else if (number === 0) {
